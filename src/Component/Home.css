@@ -1,0 +1,119 @@
+/* Make the container take the full height */
+
+.home-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Style the background image */
+.background-image {
+    background-image: url('https://media.istockphoto.com/id/1280385511/photo/colorful-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=ghKTO8BAp-B6l1jR3gmsx2WAMGPMJzuZEp86iRkJ_1Y='); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+/* Text styles over the image */
+.text-container {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+/* Overlay for better text visibility */
+.background-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+}
+
+/* Navbar shadow */
+.navbar {
+    font-family: gilroy;
+    font-weight: 500;
+    font-size: medium;
+    z-index: 10; /* Ensure it stays above the background */
+}
+
+
+.text-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Navbar is above the video */
+.navbar {
+    z-index: 10;
+}
+
+/* About page styles */
+.about-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding-top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.home-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+/* 
+.video-background {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+} */
+
+.text-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
