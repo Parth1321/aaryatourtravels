@@ -6,11 +6,11 @@ import React from 'react';
 import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'; // For social media icons
 import "../Component/Home.css";
-import pachmadhii from "../assets/img/pachmadhi.jpg"; // Correct path and extension
-import kanha01 from "../assets/img/kanha01.jpg";
-import bhedaghat from "../assets/img/gwalior.jpg";
-import khajuraho from "../assets/img/khajuraho.jpg";
-import orcha from "../assets/img/orcha.jpg";
+import pachmadhii from "../assets/pachmadhi.jpg"; // Correct path and extension
+import kanha01 from "../assets/kanha01.jpg";
+import bhedaghat from "../assets/gwalior.jpg";
+import khajuraho from "../assets/khajuraho.jpg";
+import orcha from "../assets/orcha.jpg";
 
 const Home = () => {
   return (
