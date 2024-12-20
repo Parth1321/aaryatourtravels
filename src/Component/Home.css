@@ -1,4 +1,4 @@
-/* Make the container take the full height */
+Make the container take the full height
 
 .home-container {
     position: relative;
@@ -117,3 +117,537 @@
     text-align: center;
     color: #fff;
 }
+
+
+
+.second-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .second-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .second-section-image {
+    width: 50%; /* 50% width for the image */
+  }
+  
+  .second-section-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .second-section-text {
+    width: 50%; /* 50% width for the text */
+    padding-left: 30px;
+  }
+  
+  .second-section-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .second-section-paragraph {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    /* Stack the image and text on top of each other for smaller screens */
+    .second-section-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .second-section-image,
+    .second-section-text {
+      width: 100%;  /* Full width for both on smaller screens */
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .second-section-heading {
+      font-size: 1.5rem;
+    }
+  
+    .second-section-paragraph {
+      font-size: 0.9rem;
+    }
+  }
+
+
+
+
+  /* ThirdPage.css */
+.third-page-container {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .third-page-content {
+    padding: 50px 0;
+  }
+  
+  .third-page-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .third-page-text {
+    width: 50%; /* 50% width for the text */
+    padding-right: 30px;
+  }
+  
+  .third-page-text .third-page-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .third-page-text .third-page-paragraph {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .third-page-image {
+    width: 50%; /* 50% width for the image */
+  }
+  
+  .third-page-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    /* Stack the image and text on top of each other for smaller screens */
+    .third-page-flex {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .third-page-text,
+    .third-page-image {
+      width: 100%;  /* Full width for both on smaller screens */
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    .third-page-heading {
+      font-size: 1.5rem;
+    }
+  
+    .third-page-paragraph {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+
+  /* Make the container take the full height */
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Style the background image */
+.background-image {
+  background-image: url('https://media.istockphoto.com/id/1280385511/photo/colorful-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=ghKTO8BAp-B6l1jR3gmsx2WAMGPMJzuZEp86iRkJ_1Y='); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+/* Text styles over the image */
+.text-container {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+/* Overlay for better text visibility */
+.background-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 0;
+}
+
+/* Navbar shadow */
+.navbar {
+  font-family: gilroy;
+  font-weight: 500;
+  font-size: medium;
+  z-index: 10; /* Ensure it stays above the background */
+}
+
+
+.text-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Navbar is above the video */
+.navbar {
+  z-index: 10;
+}
+
+/* About page styles */
+.about-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding-top: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+/* 
+.video-background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+} */
+
+.text-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+.second-section {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.second-section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.second-section-image {
+  width: 50%; /* 50% width for the image */
+}
+
+.second-section-image img {
+  width: 100%;
+  height: auto;
+}
+
+.second-section-text {
+  width: 50%; /* 50% width for the text */
+  padding-left: 30px;
+}
+
+.second-section-heading {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.second-section-paragraph {
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  /* Stack the image and text on top of each other for smaller screens */
+  .second-section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .second-section-image,
+  .second-section-text {
+    width: 100%;  /* Full width for both on smaller screens */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .second-section-heading {
+    font-size: 1.5rem;
+  }
+
+  .second-section-paragraph {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+/* ThirdPage.css */
+.third-page-container {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.third-page-content {
+  padding: 50px 0;
+}
+
+.third-page-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-page-text {
+  width: 50%; /* 50% width for the text */
+  padding-right: 30px;
+}
+
+.third-page-text .third-page-heading {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.third-page-text .third-page-paragraph {
+  font-size: 1rem;
+  color: #555;
+}
+
+.third-page-image {
+  width: 50%; /* 50% width for the image */
+}
+
+.third-page-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* Stack the image and text on top of each other for smaller screens */
+  .third-page-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .third-page-text,
+  .third-page-image {
+    width: 100%;  /* Full width for both on smaller screens */
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .third-page-heading {
+    font-size: 1.5rem;
+  }
+
+  .third-page-paragraph {
+    font-size: 0.9rem;
+  }
+
+}
+
+/* Container for the four cards */
+.four-cards-container {
+padding: 30px 0;
+}
+
+/* Flexbox for the card layout */
+.four-cards-flex {
+display: flex;
+flex-wrap: wrap;
+gap: 20px; /* Adds space between the cards */
+justify-content: space-between;
+}
+
+/* Individual card styles */
+.card {
+flex: 1 1 23%; /* Takes up 23% of the row width to fit 4 cards */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+border-radius: 8px; /* Rounded corners */
+overflow: hidden;
+background-color: #fff;
+transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+transform: translateY(-5px); /* Hover effect for cards */
+}
+
+/* Card image styling */
+.card-img {
+width: 100%;
+height: 200px;
+object-fit: cover; /* Ensures image covers the space without distortion */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 1200px) {
+.card {
+  flex: 1 1 48%; /* 2 cards in a row for medium screens */
+}
+}
+
+@media (max-width: 768px) {
+.card {
+  flex: 1 1 100%; /* 1 card per row on small screens */
+}
+}
+
+
+.navbar-brand img {
+margin-right: 10px; /* Adjust space between logo and text */
+}
+
+
+
+
+
+.footer {
+background-color: #343a40;
+color: #fff;
+}
+
+.footer h5 {
+font-size: 1.2rem;
+}
+
+.footer .nav-link {
+color: #fff;
+}
+
+.footer .nav-link:hover {
+color: #f8f9fa;
+}
+
+.footer .text-center {
+margin-top: 20px;
+}
+
+.footer .nav-link {
+margin: 0 10px;
+}
+
+
+
+
+
+
+/* Container styles for the second section */
+.second-section {
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 60px 0;
+}
+
+.second-section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.why-choose-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Card shadow */
+  max-width: 1200px; /* Max width for the card */
+  width: 100%; /* Full width on smaller screens */
+  text-align: center;
+}
+
+.second-section-heading {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* "Why Choose Us?" section layout */
+.why-choose-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2-column layout */
+  gap: 30px;
+}
+
+.why-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.why-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.why-item-heading {
+  font-size: 1.8rem;
+  color: #2980b9;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.why-item-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .why-choose-us {
+    grid-template-columns: 1fr; /* Stacking layout on smaller screens */
+  }
+}
+
+
